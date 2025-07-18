@@ -604,5 +604,56 @@
     object-fit: contain;
     display: inline-block;
 }
+.highlight-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.feature-list {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-list li {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.highlight-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.highlight-btn:hover {
+    background-color: #333;
+}
+
 
 
