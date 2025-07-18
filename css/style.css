@@ -604,6 +604,7 @@
     object-fit: contain;
     display: inline-block;
 }
+
 .highlight-card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -654,6 +655,4 @@
 .highlight-btn:hover {
     background-color: #333;
 }
-
-
 
