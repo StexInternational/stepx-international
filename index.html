@@ -532,12 +532,20 @@
       <!-- Mistakes List -->
       <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
         <div class="bg-white p-4 p-lg-5 rounded shadow-sm h-100">
-          <h5 class="fw-semibold text-danger mb-4">Typical Business Pitfalls</h5>
+          <h3 class="fw-semibold text-danger mb-4">Typical Business Pitfalls</h3>
           <ul class="list-unstyled fs-5 text-dark mb-0">
-            <li class="mb-3">❌ One-time sessions with no follow-up</li>
-            <li class="mb-3">❌ Talks without tracking performance</li>
-            <li class="mb-3">❌ Teams unaligned with sales goals</li>
-            <li class="mb-2 text-success">✅ <strong>StepX provides ongoing, expert-led support</strong></li>
+            <li class="mb-3">
+              <i class="bi bi-x-circle-fill text-danger me-2"></i>One-time sessions with no follow-up
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-x-circle-fill text-danger me-2"></i>Talks without tracking performance
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-x-circle-fill text-danger me-2"></i>Teams unaligned with sales goals
+            </li>
+            <li class="mb-2 text-success">
+              <i class="bi bi-check-circle-fill text-success me-2"></i><strong>StepX provides ongoing, expert-led support</strong>
+            </li>
           </ul>
         </div>
       </div>
@@ -549,36 +557,54 @@
     </div>
 
     <!-- Why Choose StepX -->
-    <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.4s">
-      <div class="col-lg-10">
-        <div class="bg-white p-5 rounded shadow text-center">
-          <h3 class="fw-bold text-primary mb-3">Why StepX?</h3>
-          <p class="fs-5 text-dark mb-4">Because people build businesses — and we build people.</p>
-          <div class="row g-4 mb-4 text-start">
-            <div class="col-md-6">
-              <ul class="list-unstyled fs-5 mb-0">
-                <li class="mb-2">✔️ Proven systems backed by experience</li>
-                <li class="mb-2">✔️ Performance reports with actionable data</li>
-                <li class="mb-2">✔️ Flexible: Online or On-site</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled fs-5 mb-0">
-                <li class="mb-2">✔️ Tailored for SMEs & startups</li>
-                <li class="mb-2">✔️ End-to-end staff development</li>
-              </ul>
-            </div>
+<div class="row align-items-stretch wow fadeInUp" data-wow-delay="0.4s">
+  <!-- Image on Left -->
+  <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+    <div class="w-100 h-100">
+      <img src="img/why us.png" class="img-fluid rounded shadow w-100 h-100" alt="Why Choose StepX" style="object-fit: cover;">
+    </div>
+  </div>
+
+  <!-- Text Content on Right -->
+  <div class="col-lg-6 d-flex">
+    <div class="bg-white p-5 rounded shadow w-100 d-flex flex-column justify-content-between">
+      <div>
+        <h3 class="fw-bold text-primary mb-3">Why StepX?</h3>
+        <p class="fs-5 text-dark mb-4">Because people build businesses — and we build people.</p>
+        <div class="row g-4 mb-4 text-start">
+          <div class="col-md-6 custom-list">
+            <ul class="list-unstyled fs-5 mb-0">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Proven systems backed by experience</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Performance reports with actionable data</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Flexible: Online or On-site</li>
+            </ul>
           </div>
-          <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow wow fadeInUp" data-wow-delay="0.5s">
-            🚀 Book Now
-          </a>
+          <div class="col-md-6 custom-list">
+            <ul class="list-unstyled fs-5 mb-0">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Tailored for SMEs & startups</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>End-to-end staff development</li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <!-- Right-Aligned Button -->
+      <div class="text-end">
+        <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow wow fadeInUp" data-wow-delay="0.5s">
+          🚀 Book Now
+        </a>
       </div>
     </div>
   </div>
 </div>
+
+
+
+  </div>
+</div>
 <!-- Common Training Mistakes & Why Choose StepX End -->
- 
+
+
 
 
 <!-- Before & After StepX Section Start -->
@@ -613,7 +639,7 @@
               <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Weekly strategy alignments</li>
             </ul>
           </div>
-        </div>
+        </div><br>
 
         <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-4 py-3 shadow-sm mt-3 wow fadeInUp" data-wow-delay="0.6s">
           🚀 Book Your Free Team Assessment
@@ -665,6 +691,12 @@
 </div>
 <!-- Full-width Image Banner End -->
 
+<!-- Custom CSS for spacing -->
+<style>
+  .custom-list li {
+    margin-bottom: 10px;
+  }
+</style>
 
 <!-- Zig-Zag Section Start -->
 <div class="container-xxl py-5">
@@ -675,7 +707,7 @@
             <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
                 <h4 class="fw-bold mb-3">Step 1: Assess the Business & Team Reality</h4>
                 <p>We begin with a deep-dive into your current sales and team performance.</p>
-                <ul>
+                <ul class="custom-list">
                     <li>✔️ Deep-dive into current sales and team performance</li>
                     <li>✔️ Team analysis and individual skill mapping</li>
                     <li>✔️ Identify gaps between team capability and business goals</li>
@@ -691,7 +723,7 @@
             <div class="col-md-6 wow fadeInRight" data-wow-delay="0.2s">
                 <h4 class="fw-bold mb-3">Step 2: Restructure & Align the Team</h4>
                 <p>We redesign your sales or operations team for better performance and clarity.</p>
-                <ul>
+                <ul class="custom-list">
                     <li>✔️ Role-based team structuring</li>
                     <li>✔️ Recruitment support and role fitment</li>
                     <li>✔️ Setting expectations and ownership</li>
@@ -707,16 +739,15 @@
             <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
                 <h4 class="fw-bold mb-3">Step 3: Train & Mentor for Performance</h4>
                 <p>Focused employee training and development aligned with your needs.</p>
-                <ul>
+                <ul class="custom-list">
                     <li>✔️ Hybrid or in-person training</li>
                     <li>✔️ Daily mentoring and coaching</li>
                     <li>✔️ Customized corporate sales training programs</li>
                 </ul>
             </div>
-          <div class="col-md-6 text-center wow fadeInRight" data-wow-delay="0.4s">
-            <img src="img/step3.jpg" class="img-fluid rounded shadow" alt="Step 3 Image" style="width: 75%;">
-        </div>
-
+            <div class="col-md-6 text-center wow fadeInRight" data-wow-delay="0.4s">
+                <img src="img/step3.jpg" class="img-fluid rounded shadow" alt="Step 3 Image" style="width: 75%;">
+            </div>
         </div>
 
         <!-- Step 4 -->
@@ -724,7 +755,7 @@
             <div class="col-md-6 wow fadeInRight" data-wow-delay="0.2s">
                 <h4 class="fw-bold mb-3">Step 4: Manage, Track & Review Progress</h4>
                 <p>We continuously guide and measure improvement.</p>
-                <ul>
+                <ul class="custom-list">
                     <li>✔️ Daily report reviews</li>
                     <li>✔️ Weekly leadership syncs</li>
                     <li>✔️ Data-backed performance dashboards</li>
@@ -740,7 +771,7 @@
             <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
                 <h4 class="fw-bold mb-3">Step 5: Sustain Growth & Build Internal Capability</h4>
                 <p>Build long-term systems and leadership pipelines.</p>
-                <ul>
+                <ul class="custom-list">
                     <li>✔️ High potential employee programs</li>
                     <li>✔️ Post-program analysis and feedback</li>
                     <li>✔️ Support to develop internal training plans</li>
@@ -756,7 +787,7 @@
             <div class="col-md-6 wow fadeInRight" data-wow-delay="0.2s">
                 <h4 class="fw-bold mb-3">Step 6: Achieve Outcomes</h4>
                 <p>Higher ROI through focused employee training and development:</p>
-                <ul>
+                <ul class="custom-list">
                     <li>✔️ Goal-driven teams built with staff training and development</li>
                     <li>✔️ Better resource use via corporate sales training programs</li>
                     <li>✔️ Scalable teams through high potential employee programs</li>
@@ -773,6 +804,7 @@
 <!-- Zig-Zag Section End -->
 
 
+
 <!-- Testimonial Start -->
 <div class="container-xxl pt-4 pb-2">
     <div class="container">
@@ -783,25 +815,25 @@
         </div>
         <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
             <div class="testimonial-item rounded p-4 p-lg-5 mb-4">
-                <img class="mb-4" src="img/testimonial-1.jpg" alt="Client Photo">
+                <img class="mb-4" src="img/test1.jpg" alt="Client Photo">
                 <p class="mb-4">“StepX’s sales training transformed our team’s approach. Our closing rates increased by over 30% in just three months!”</p>
                 <h5>Rajesh Kumar</h5>
                 <span class="text-primary">Sales Manager, Tech Solutions Ltd.</span>
             </div>
             <div class="testimonial-item rounded p-4 p-lg-5 mb-4">
-                <img class="mb-4" src="img/testimonial-2.jpg" alt="Client Photo">
+                <img class="mb-4" src="img/test2.jpg" alt="Client Photo">
                 <p class="mb-4">“The leadership development program gave me the confidence and skills to lead my team effectively and inspire growth.”</p>
                 <h5>Anita Thomas</h5>
                 <span class="text-primary">Operations Head, Growth Corp.</span>
             </div>
             <div class="testimonial-item rounded p-4 p-lg-5 mb-4">
-                <img class="mb-4" src="img/testimonial-3.jpg" alt="Client Photo">
+                <img class="mb-4" src="img/test3.jpg" alt="Client Photo">
                 <p class="mb-4">“Personal mentoring with StepX helped me unlock my potential and improve both my mindset and business results.”</p>
                 <h5>Joseph Mathew</h5>
                 <span class="text-primary">Entrepreneur</span>
             </div>
             <div class="testimonial-item rounded p-4 p-lg-5 mb-4">
-                <img class="mb-4" src="img/testimonial-4.jpg" alt="Client Photo">
+                <img class="mb-4" src="img/test4.jpg" alt="Client Photo">
                 <p class="mb-4">“Thanks to StepX’s expert consulting, we streamlined operations and achieved sustainable growth within six months.”</p>
                 <h5>Neha Pillai</h5>
                 <span class="text-primary">CEO, Innovative Startups</span>
