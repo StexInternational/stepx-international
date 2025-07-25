@@ -687,3 +687,33 @@
   margin-bottom: 20px; /* adjust as needed */
   line-height: 1.9;
 }
+
+/* Shared Floating Button Style */
+.btn-float {
+  position: fixed;
+  bottom: 80px; /* 🔼 increased from 20px to 80px */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+/* Call Button - Left */
+.call-btn {
+  left: 20px;
+  background-color: #007BFF;
+}
+
+/* WhatsApp Button - Right */
+.whatsapp-btn {
+  right: 20px;
+  background-color: #25D366;
+}
