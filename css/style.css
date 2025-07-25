@@ -717,3 +717,16 @@
   right: 20px;
   background-color: #25D366;
 }
+
+.comparison-img {
+  max-width: 90%;
+  max-height: 350px;
+  height: auto;
+  margin-top: -90px;
+}
+
+@media (max-width: 768px) {
+  .comparison-img {
+    margin-top: 0; /* Removes the overlap on mobile view */
+  }
+}
