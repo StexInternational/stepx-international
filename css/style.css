@@ -598,12 +598,26 @@
     color: var(--primary) !important;
 }
 
-.vendor-img {
-    height: 100px;
-    width: auto;
-    object-fit: contain;
-    display: inline-block;
+.vendor-item {
+  height: 140px; /* Height for alignment */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
+
+.vendor-img {
+  max-height: 100%;         /* Fit height */
+  max-width: 160px;         /* Optional: limit width */
+  object-fit: contain;      /* Maintain aspect ratio */
+  transition: transform 0.2s ease;
+  padding: 5px;
+}
+
+.vendor-img:hover {
+  transform: scale(1.05);   /* Smooth zoom on hover */
+}
+
 
 .highlight-card {
     background-color: #ffffff;
@@ -667,4 +681,9 @@
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.custom-list li {
+  margin-bottom: 20px; /* adjust as needed */
+  line-height: 1.9;
 }
