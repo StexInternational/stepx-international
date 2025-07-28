@@ -61,6 +61,19 @@
   new WOW().init();
 </script>
 
+<!-- Placeholder for Google Ads Global Site Tag -->
+<!-- Replace 'AW-XXXXXXXXXX' when ID is provided -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-XXXXXXXXXX');
+</script>
+
+
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -189,33 +202,60 @@ src="https://www.facebook.com/tr?id=1312855767025226&ev=PageView&noscript=1"
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="w-100 img-fluid" src="img/8.jpg" alt="StepX Carousel Image" style="object-fit: cover; height: 100vh;">
+
+        <!-- Carousel Caption -->
         <div class="carousel-caption d-flex align-items-center justify-content-center">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-12 col-md-10 col-lg-8 text-center text-lg-start">
+
+                <!-- Heading -->
                 <h3 class="display-6 text-white mb-3 animated slideInRight">
                   Build a Confident, Capable Team <br>That Drives Growth
                 </h3>
+
+                <!-- Subtext -->
                 <p class="text-white mb-4 animated slideInUp fs-6">
                   StepX helps you train, mentor, and rebuild your team — so you can scale faster, stress-free.
                 </p>
-                <div class="d-flex justify-content-center justify-content-lg-start">
-                 <a href="service.html" 
-                    class="btn btn-warning text-dark fw-bold rounded-pill py-2 px-4 animated slideInUp" 
-                    id="btn-hero-book-consult" 
-                    onclick="fbq('track', 'Lead');">
-                    🚀 Book a free Consultation
+
+                <!-- Label -->
+                <p class="text-white fw-semibold fs-5 mb-3 animated slideInUp">
+                  🚀 Book Your <u>Free Consultation</u> Now
+                </p>
+
+                <!-- Buttons -->
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+
+                  <!-- WhatsApp Button -->
+                  <a href="https://wa.me/919037762644"
+                     target="_blank"
+                     class="btn btn-success fw-bold rounded-pill py-2 px-4 animated slideInUp"
+                     onclick="fbq('track', 'Lead');">
+                     💬 WhatsApp Us
                   </a>
+
+                  <!-- Call Button -->
+                  <a href="tel:+919037762644"
+                     class="btn btn-warning text-dark fw-bold rounded-pill py-2 px-4 animated slideInUp"
+                     onclick="fbq('track', 'Lead');">
+                     📞 Call Us Now
+                  </a>
+
                 </div>
+
               </div>
             </div>
           </div>
         </div>
+        <!-- End Carousel Caption -->
+
       </div>
     </div>
   </div>
 </div>
 <!-- Single Carousel End -->
+
 
 
 <!-- Vendor Start -->
@@ -1131,13 +1171,13 @@ src="https://www.facebook.com/tr?id=1312855767025226&ev=PageView&noscript=1"
 
       <!-- Button on the right center -->
       <div class="col-lg-4 d-flex justify-content-lg-end justify-content-center mt-4 mt-lg-0">
-       <a href="service.html" 
-        class="btn btn-primary rounded-pill py-3 px-5" 
-        style="font-size: 1.25rem; min-width: 180px;"
-        id="btn-footer-book"
-        onclick="fbq('track', 'Lead');">
-        BOOK NOW
-      </a>
+      <a href="#" 
+   class="btn btn-primary rounded-pill py-3 px-5" 
+   style="font-size: 1.25rem; min-width: 180px;"
+   id="btn-footer-book">
+   BOOK NOW
+</a>
+
 
       </div>
     </div>
@@ -1397,6 +1437,129 @@ src="https://www.facebook.com/tr?id=1312855767025226&ev=PageView&noscript=1"
    onclick="fbq('track', 'Lead');">
   <i class="fab fa-whatsapp"></i>
 </a>
+
+<style>
+  .modal {
+    display: none;  /* hidden by default */
+    position: fixed;
+    z-index: 1050;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal.show {
+    display: flex;  /* show modal when .show class added */
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 8px;
+    max-width: 420px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 15px; top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .submit-btn {
+    font-weight: 600;
+  }
+</style>
+
+<!-- Lead Form Popup Modal -->
+<div id="leadFormModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" id="closeFormBtn">&times;</button>
+    <h2>Get A Free Quote</h2>
+    <form id="leadForm" action="https://formspree.io/f/mdkdowyb" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" />
+      <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit" class="submit-btn btn btn-primary w-100 mt-3">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('leadFormModal');
+const openBtns = [
+  document.getElementById('btn-get-quote'), 
+  document.getElementById('btn-footer-book')
+];
+const closeBtn = document.getElementById('closeFormBtn');
+
+openBtns.forEach(btn => {
+  if (btn) {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      modal.classList.add('show');
+
+      // Facebook Pixel lead event on popup open
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+
+      // Google Analytics (if used)
+      if (typeof gtag === 'function') {
+        gtag('event', 'lead_popup_open', {
+          'event_category': 'Engagement',
+          'event_label': btn.id
+        });
+      }
+    });
+  }
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('show');
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('show');
+  }
+});
+
+document.getElementById('leadForm').addEventListener('submit', () => {
+  if (typeof fbq === 'function') {
+    fbq('track', 'Lead');
+  }
+  if (typeof gtag === 'function') {
+    gtag('event', 'lead_form_submit', {
+      'event_category': 'Conversions',
+      'event_label': 'Lead Form'
+    });
+  }
+});
+
+</script>
+
 
 
 </body>
