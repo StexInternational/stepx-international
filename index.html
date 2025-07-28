@@ -981,60 +981,80 @@
 <!-- Call-to-Action Section End -->
 
 
+<style>
+  .fixed-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .fixed-grid-header,
+  .fixed-grid-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .fixed-grid-header div,
+  .fixed-grid-row div {
+    flex: 1;
+    padding: 0.5rem;
+    min-width: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .fixed-grid-header div,
+    .fixed-grid-row div {
+      font-size: 0.9rem;
+      padding: 0.4rem;
+    }
+
+    .fixed-grid-row {
+      flex-wrap: nowrap;
+    }
+  }
+</style>
+
 <div class="container-xxl py-5">
   <div class="container">
-    <!-- Section Heading -->
-    <div class="text-center mb-5">
+    <!-- Section Title -->
+    <div class="text-center mb-4">
       <h2 class="fw-bold text-dark">Not Sure What You Need?</h2>
     </div>
 
-    <!-- Column Headings (Desktop & Mobile) -->
-    <div class="row fw-bold text-center mb-3">
-      <div class="col-4 text-muted text-lg-dark">Your Issue</div>
-      <div class="col-4 text-muted text-lg-dark">Our Program</div>
-      <div class="col-4 text-muted text-lg-dark">Your Solution</div>
-    </div>
+    <!-- Table Style Responsive Grid -->
+    <div class="fixed-grid">
+      <!-- Header -->
+      <div class="fixed-grid-header fw-bold text-muted">
+        <div style="color: black; font-size: 110%;" >Your Issue</div>
+        <div style="color: black; font-size: 110%;" >Our Program</div>
+        <div style="color: black; font-size: 110%;">Your Solution</div>
+      </div>
 
-    <!-- Content Rows -->
-    <div class="row gy-4 text-center">
       <!-- Row 1 -->
-      <div class="col-12 col-lg-4">
-        <p class="fw-semibold text-dark mb-0" style="font-size: 1.125rem;">“I have a sales team but it’s underperforming”</p>
-      </div>
-      <div class="col-12 col-lg-4">
-        <p class="fw-bold text-primary mb-0" style="font-size: 1.125rem;">Team Reboot</p>
-      </div>
-      <div class="col-12 col-lg-4">
-        <a href="https://wa.me/919037762644" target="_blank" class="btn btn-primary rounded-pill mt-2">Book a Consultation</a>
+      <div class="fixed-grid-row align-items-center">
+        <div style="color: black; font-size: 110%;">“I have a sales team but it’s underperforming”</div>
+        <div class="fw-bold text-primary" style="color: black; font-size: 110%;">Team Reboot</div>
+        <div><a href="https://wa.me/919037762644" target="_blank" class="btn btn-primary rounded-pill">Book a Consultation</a></div>
       </div>
 
       <!-- Row 2 -->
-      <div class="col-12 col-lg-4 mt-4">
-        <p class="fw-semibold text-dark mb-0" style="font-size: 1.125rem;">“I’m a business owner wearing too many hats”</p>
-      </div>
-      <div class="col-12 col-lg-4 mt-4">
-        <p class="fw-bold text-primary mb-0" style="font-size: 1.125rem;">Virtual Sales Manager</p>
-      </div>
-      <div class="col-12 col-lg-4 mt-4">
-        <a href="https://wa.me/919037762644" target="_blank" class="btn btn-primary rounded-pill mt-2">Book a Consultation</a>
+      <div class="fixed-grid-row align-items-center">
+        <div style="color: black; font-size: 110%;">“I’m a business owner wearing too many hats”</div>
+        <div class="fw-bold text-primary" style="color: black; font-size: 110%;">Virtual Sales Manager</div>
+        <div><a href="https://wa.me/919037762644" target="_blank" class="btn btn-primary rounded-pill">Book a Consultation</a></div>
       </div>
 
       <!-- Row 3 -->
-      <div class="col-12 col-lg-4 mt-4">
-        <p class="fw-semibold text-dark mb-0" style="font-size: 1.125rem;">“I need to hire and train a new team”</p>
-      </div>
-      <div class="col-12 col-lg-4 mt-4">
-        <p class="fw-bold text-primary mb-0" style="font-size: 1.125rem;">Workforce Optimization</p>
-      </div>
-      <div class="col-12 col-lg-4 mt-4">
-        <a href="https://wa.me/919037762644" target="_blank" class="btn btn-primary rounded-pill mt-2">Book a Consultation</a>
+      <div class="fixed-grid-row align-items-center">
+        <div style="color: black; font-size: 110%;">“I need to hire and train a new team”</div>
+        <div class="fw-bold text-primary" style="color: black; font-size: 110%;">Workforce Optimization</div>
+        <div><a href="https://wa.me/919037762644" target="_blank" class="btn btn-primary rounded-pill">Book a Consultation</a></div>
       </div>
     </div>
   </div>
 </div>
-
-
-
 
 
 
