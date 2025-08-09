@@ -196,12 +196,12 @@ src="https://www.facebook.com/tr?id=1312855767025226&ev=PageView&noscript=1"
     <!-- Navbar End -->
 
 
- <!-- Single Carousel Start -->
+<!-- Single Carousel Start -->
 <div class="container-fluid px-0 mb-2">
   <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="w-100 img-fluid" src="img/8.jpg" alt="StepX Carousel Image" style="object-fit: cover; height: 100vh;">
+        <img class="w-100 img-fluid" src="img/8.jpg" alt="StepX Carousel Image" style="object-fit: cover; height: 100vh; filter: brightness(0.6);">
 
         <!-- Carousel Caption -->
         <div class="carousel-caption d-flex align-items-center justify-content-center">
@@ -210,39 +210,67 @@ src="https://www.facebook.com/tr?id=1312855767025226&ev=PageView&noscript=1"
               <div class="col-12 col-md-10 col-lg-8 text-center text-lg-start">
 
                 <!-- Heading -->
-                <h3 class="display-6 text-white mb-3 animated slideInRight">
-                  Build a Confident, Capable Team <br>That Drives Growth
-                </h3>
+               <h3 class="display-5 fw-bold mb-4 animated fadeInDown text-gradient-stepx" style="line-height: 1.3;">
+  Build a Confident, Capable Team <br>That Drives Growth
+</h3>
+
 
                 <!-- Subtext -->
-                <p class="text-white mb-4 animated slideInUp fs-6">
+                <p class="text-white-50 mb-4 animated fadeInUp fs-5" style="max-width: 600px;">
                   StepX helps you train, mentor, and rebuild your team — so you can scale faster, stress-free.
                 </p>
 
                 <!-- Label -->
-                <p class="text-white fw-semibold fs-5 mb-3 animated slideInUp">
-                  🚀 Book Your <u>Free Consultation</u> Now
+                <p class="text-white fw-bold fs-4 mb-4 animated fadeInUp" style="letter-spacing: 0.5px;">
+                  🚀 Book Your Free Consultation Now
                 </p>
 
-                <!-- Buttons -->
-                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+              <!-- Buttons -->
+<div class="d-flex flex-row flex-wrap flex-sm-row gap-2 justify-content-center justify-content-lg-start animated fadeInUp" style="flex-wrap: nowrap;">
 
-                  <!-- WhatsApp Button -->
-                  <a href="https://wa.me/919037762644"
-                     target="_blank"
-                     class="btn btn-success fw-bold rounded-pill py-2 px-4 animated slideInUp"
-                     onclick="fbq('track', 'Lead');">
-                     💬 WhatsApp Us
-                  </a>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919037762644"
+     target="_blank"
+     class="btn btn-success fw-bold rounded-pill shadow-lg"
+     onclick="fbq('track', 'Lead');"
+     style="padding: 0.6rem 1.2rem; font-size: 0.9rem;"
+     id="whatsapp-btn">
+     💬 WhatsApp Us
+  </a>
 
-                  <!-- Call Button -->
-                  <a href="tel:+919037762644"
-                     class="btn btn-warning text-dark fw-bold rounded-pill py-2 px-4 animated slideInUp"
-                     onclick="fbq('track', 'Lead');">
-                     📞 Call Us Now
-                  </a>
+  <!-- Call Button -->
+  <a href="tel:+919037762644"
+     class="btn btn-warning text-dark fw-bold rounded-pill shadow-lg"
+     onclick="fbq('track', 'Lead');"
+     style="padding: 0.6rem 1.2rem; font-size: 0.9rem;"
+     id="call-btn">
+     📞 Call Us Now
+  </a>
 
-                </div>
+</div>
+
+<style>
+/* Large size for mobile */
+@media (max-width: 576px) {
+  #whatsapp-btn,
+  #call-btn {
+    padding: 0.8rem 1.4rem !important;
+    font-size: 1rem !important;
+    white-space: nowrap; /* prevent text breaking */
+  }
+}
+
+/* Small size for laptop/desktop */
+@media (min-width: 992px) {
+  #whatsapp-btn,
+  #call-btn {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+</style>
+
+
 
               </div>
             </div>
@@ -305,8 +333,8 @@ src="https://www.facebook.com/tr?id=1312855767025226&ev=PageView&noscript=1"
           <img src="img/vendor-12.png" alt="" class="vendor-img">
         </div>
           <div class="vendor-item d-flex justify-content-center align-items-center">
-              <img src="img/vendor-13.png" alt="" class="vendor-img" style="max-height: 120px; width: auto; object-fit: contain;">
-            </div>
+  <img src="img/vendor-13.png" alt="" class="vendor-img" style="max-height: 120px; width: auto; object-fit: contain;">
+</div>
 
           <div class="vendor-item d-flex justify-content-center align-items-center">
           <img src="img/vendor-14.png" alt="" class="vendor-img">
