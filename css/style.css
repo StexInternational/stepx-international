@@ -612,10 +612,19 @@
   object-fit: contain;      /* Maintain aspect ratio */
   transition: transform 0.2s ease;
   padding: 5px;
+  display: block;
 }
 
 .vendor-img:hover {
   transform: scale(1.05);   /* Smooth zoom on hover */
+}
+
+.vendor-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  text-align: center;
 }
 
 
