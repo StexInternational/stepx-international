@@ -194,10 +194,11 @@
 }
 
 .text-gradient-stepx {
-  background: linear-gradient(45deg, #3BB4FF, #7A5CFF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(45deg, #3BB4FF, #7A5CFF) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
+
 
 
 
