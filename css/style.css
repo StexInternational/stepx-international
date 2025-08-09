@@ -619,10 +619,15 @@
   transform: scale(1.05);   /* Smooth zoom on hover */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 .vendor-name {
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000; /* eye-catching orange */
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin: 0;
   text-align: center;
 }
