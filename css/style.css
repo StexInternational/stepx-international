@@ -193,6 +193,13 @@
     color: var(--light);
 }
 
+.text-gradient-stepx {
+  background: linear-gradient(45deg, #3BB4FF, #7A5CFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 
 /*** Features ***/
 .feature-row {
@@ -535,7 +542,7 @@
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
     background: var(--primary);
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -631,7 +638,6 @@
   margin: 0;
   text-align: center;
 }
-
 
 .highlight-card {
     background-color: #ffffff;
@@ -744,3 +750,7 @@
     margin-top: 0; /* Removes the overlap on mobile view */
   }
 }
+
+
+
+
